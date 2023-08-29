@@ -1,4 +1,4 @@
-package com.euforia.vainillahotchocolate.repository;
+package com.euforia.vainillahotchocolate.dao;
 
 
 import com.euforia.vainillahotchocolate.models.Ingrediente;
