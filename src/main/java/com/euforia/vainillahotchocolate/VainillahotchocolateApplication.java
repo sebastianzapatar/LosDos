@@ -1,0 +1,13 @@
+package com.euforia.vainillahotchocolate;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class VainillahotchocolateApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(VainillahotchocolateApplication.class, args);
+    }
+
+}
