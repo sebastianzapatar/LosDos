@@ -53,4 +53,6 @@ jobs:
           package: '*.jar'
 env:
   DATABASE_URL: jdbc:sqlserver://servidorsq.database.windows.net:1433;database=implementacion;user=szapatar@servidorsq;password=Julian123+;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  DATABASE_USERNAME: szapatar
+  DATABASE_PASSWORD: Julian123+
 
