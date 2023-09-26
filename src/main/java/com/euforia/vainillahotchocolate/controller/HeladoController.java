@@ -14,7 +14,7 @@ public class HeladoController {
     @Autowired
     private IHeladoService heladoService;
 
-    @GetMapping("/helados")
+    @GetMapping("/helado")
     public List<Helado> findAll(){
         return heladoService.getAllHelados();
     }
