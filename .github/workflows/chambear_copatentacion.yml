@@ -12,7 +12,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      DATABASE_URL: jdbc:sqlserver://mimos.database.windows.net:1433;database=terroristasdehelado;user=laspeligrosas@mimos;password=My secret pass +;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+      DATABASE_USERNAME: laspeligrosas
+      DATABASE_PASSWORD: My secret pass +
     steps:
       - uses: actions/checkout@v2
 
@@ -51,3 +54,8 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3E271523D52049B591F1FEA8AF93CBD5 }}
           package: '*.jar'
+    env:
+      DATABASE_URL: jdbc:sqlserver://mimos.database.windows.net:1433;database=terroristasdehelado;user=laspeligrosas@mimos;password=My secret pass +;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+      DATABASE_USERNAME: laspeligrosas
+      DATABASE_PASSWORD: My secret pass +
+  
