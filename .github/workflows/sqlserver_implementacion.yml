@@ -51,3 +51,6 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_39858BF043F0487DB367C3636E324EA4 }}
           package: '*.jar'
+env:
+  DATABASE_URL: jdbc:sqlserver://servidorsq.database.windows.net:1433;database=implementacion;user=szapatar@servidorsq;password=Julian123+;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+
